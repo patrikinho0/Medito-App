@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Medito-App</string>
+    <string name="sleep">Sleep</string>
+    <string name="download">Download</string>
+    <string name="timer">Timer</string>
+    <string name="welcome">Welcome to Medito</string>
+    <string name="more_options">More options</string>
+    <string name="sleep_image">SleepImage</string>
+    <string name="download_image">DownloadImage</string>
+    <string name="timer_image">TimerImage</string>
+    <string name="meditation_image">MeditationImage</string>
+    <string name="daily">Daily</string>
+    <string name="meditation">Meditation</string>
+    <string name="course_1_image">Course 1 Image</string>
+    <string name="getting_started">Getting started</string>
+    <string name="a_short_intro">A short intro</string>
+    <string name="home_image">Home Image</string>
+    <string name="home">Home</string>
+    <string name="packs">Packs</string>
+    <string name="packs_image">Packs Image</string>
+    <string name="learning_to_sit">Learning to Sit</string>
+    <string name="course_2_image">Course 2 Image</string>
+    <string name="step_by_step">Step by step</string>
+    <string name="course_3_image">Course 3 Image</string>
+    <string name="mindfulness">Mindfulness</string>
+    <string name="being_mindful">Being mindful</string>
+    <string name="courses">Courses</string>
+    <string name="beginnings">Beginnings</string>
+    <string name="daily_meditation">Daily meditation</string>
+    <string name="_0d">0d</string>
+    <string name="current_streak">Current streak</string>
+    <string name="_0">0</string>
+    <string name="minutes_listened">Minutes listened</string>
+    <string name="longest_streak">Longest streak</string>
+    <string name="sessions_listened">Sessions listened</string>
+    <string name="have_a_wonderful_evening">Have a wonderful evening</string>
+</resources>

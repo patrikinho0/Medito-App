@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral10"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/sleep_layout"
+        android:layout_width="190dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:background="@drawable/shape"
+        app:layout_constraintEnd_toEndOf="@+id/timer_layout"
+        app:layout_constraintStart_toStartOf="@+id/timer_layout"
+        app:layout_constraintTop_toBottomOf="@+id/timer_layout">
+
+        <LinearLayout
+            android:id="@+id/sleep_image_layout"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/sleep_imageview"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/sleep_image"
+                android:contentDescription="@string/sleep_image" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sleep_text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sleep_textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/sleep"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/download_layout"
+        android:layout_width="190dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:background="@drawable/shape"
+        app:layout_constraintEnd_toEndOf="@+id/meditation_layout"
+        app:layout_constraintStart_toStartOf="@+id/meditation_layout"
+        app:layout_constraintTop_toBottomOf="@+id/meditation_layout">
+
+        <LinearLayout
+            android:id="@+id/download_image_layout"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/download_imageview"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/download_image"
+                android:contentDescription="@string/download_image" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/download_text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/download_textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/download"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/timer_layout"
+        android:layout_width="190dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/shape"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/meditation_layout"
+        app:layout_constraintTop_toBottomOf="@+id/header_layout">
+
+        <LinearLayout
+            android:id="@+id/timer_image_layout"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/timer_imageview"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/timer_image"
+                app:srcCompat="@drawable/timer_image" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/timer_text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/timer_textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/timer"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="390dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/header_text_layout"
+            android:layout_width="330dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/header_textview"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/welcome"
+                android:textAlignment="viewStart"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/header_image_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/header_imageview"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/more_options"
+                app:srcCompat="@drawable/more_image" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/meditation_layout"
+        android:layout_width="190dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/shape"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/timer_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_layout">
+
+        <LinearLayout
+            android:id="@+id/meditation_image_layout"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/meditation_imageview"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/meditation_image"
+                app:srcCompat="@drawable/meditation_image" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/meditation_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/meditation_textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/daily_meditation"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/course_layout1"
+        android:layout_width="120dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/course_title_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/course_title_layout">
+
+        <ImageView
+            android:id="@+id/course1_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:contentDescription="@string/course_1_image"
+            app:srcCompat="@drawable/starting_image" />
+
+        <TextView
+            android:id="@+id/course1_textview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/getting_started"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/course1_textview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/beginnings"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/a_short_intro"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footer_layout"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/footer_home_layout"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/footer_home_imageview"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/home_image"
+                android:contentDescription="@string/home_image" />
+
+            <TextView
+                android:id="@+id/footer_home_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/home"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/footer_packs_layout"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/footer_packs_imageview"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/menu_image"
+                android:contentDescription="@string/packs_image" />
+
+            <TextView
+                android:id="@+id/footer_packs_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/packs"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/course_layout2"
+        android:layout_width="120dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/shape"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/course_layout3"
+        app:layout_constraintStart_toEndOf="@+id/course_layout1"
+        app:layout_constraintTop_toBottomOf="@+id/course_title_layout">
+
+        <ImageView
+            android:id="@+id/course2_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:contentDescription="@string/course_2_image"
+            app:srcCompat="@drawable/time_image" />
+
+        <TextView
+            android:id="@+id/course2_textview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/learning_to_sit"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/course2_textview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/step_by_step"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/course2_textview3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/a_short_intro"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/course_layout3"
+        android:layout_width="120dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/shape"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/course_title_layout"
+        app:layout_constraintTop_toBottomOf="@+id/course_title_layout">
+
+        <ImageView
+            android:id="@+id/course3_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:contentDescription="@string/course_3_image"
+            app:srcCompat="@drawable/mindfulness_image" />
+
+        <TextView
+            android:id="@+id/course3_textview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mindfulness"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/course3_textview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/being_mindful"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/course3_textview3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/a_short_intro"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/course_title_layout"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/sleep_layout"
+        app:layout_constraintStart_toEndOf="@+id/download_layout"
+        app:layout_constraintTop_toBottomOf="@+id/download_layout">
+
+        <TextView
+            android:id="@+id/course_title_textview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/courses"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/stats_layout"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/shape"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/course_layout2">
+
+        <LinearLayout
+            android:id="@+id/streak_layout"
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/current_streak"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/_0d"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/streak_textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/current_streak"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/minutes_layout"
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/total_minutes"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/_0"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/minutes_textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/minutes_listened"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/total_streak_layout"
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/total_streak"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/_0d"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/total_streak_textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/longest_streak"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sessions_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/total_sessions"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/_0"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/sessions_textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/sessions_listened"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/evening_layout"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/footer_layout"
+        app:layout_constraintEnd_toEndOf="@+id/stats_layout"
+        app:layout_constraintStart_toStartOf="@+id/stats_layout"
+        app:layout_constraintTop_toBottomOf="@+id/stats_layout">
+
+        <TextView
+            android:id="@+id/evening_textview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/have_a_wonderful_evening"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

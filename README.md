@@ -14,7 +14,7 @@
 
 <h2>Idea</h2>
 
-<p>The idea of the Medito application is to help developing the original Medito App.</p>
+<p>The idea of the Medito application is to help developing the original Medito App in the future.</p>
 
 <br><br>
 <p align="center">Made by <a href="https://github.com/patrikinho0">patrikinho</a></p>
